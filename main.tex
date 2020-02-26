@@ -1,0 +1,26 @@
+\documentclass[12pt,openany]{book}      % paper size is in preamble.sty
+
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+\newcommand{\authorname}{Book Author}
+\newcommand{\booktitle}{Your Book’s Title}
+\newcommand{\subtitle}{Your Book’s Subtitle}
+\newcommand{\publisher}{Your Publisher}
+\title{\booktitle}
+\author{\authorname}
+
+\usepackage{misc/preamble}
+
+\begin{document}
+\frontmatter
+\input{frontmatter/titlepage}
+\input{frontmatter/copyrightpage}
+\input{frontmatter/tocpage}
+
+\mainmatter
+\pagestyle{fancy}
+
+\input{content/chapter1}
+
+\end{document}
