@@ -3,8 +3,6 @@
 \usepackage{lettrine}   % Add drop caps to chapter openings
 \usepackage{graphicx}
 \usepackage{ebgaramond}
-\usepackage{ragged2e}   % Hyphenate ragged-right text; used in copyright page
-                        % for smoother right margin            (\RaggedRight)
 
 \newcommand{\hsp}{\kern 1pt}    % for nested quotation marks
 
@@ -12,8 +10,13 @@
 \renewcommand{\baselinestretch}{1.125}      % Allow paragraphs to breathe by spreading the lines further
 \setlength{\parskip}{0pt}                   % Fixed space between paragraphs (i.e. disable variable parskip)
 \setlength{\parindent}{1em}
-\widowpenalty=10000   % Reduce widows
-\clubpenalty=10000    % and orphans
+
+% Don’t add extra space after sentences
+\frenchspacing
+
+% Reduce widows/orphans
+\widowpenalty=10000
+\clubpenalty=10000
 
 % Page size
 \usepackage[
@@ -30,7 +33,7 @@
 
 % Contents page
 \usepackage[titles]{tocloft}
-\renewcommand{\cftchapfont}{\itshape}
+\renewcommand{\cftchapfont}{\large\itshape}
 \renewcommand{\cftchappagefont}{\normalfont}
 \renewcommand{\numberline}[1]{}
 
