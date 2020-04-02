@@ -1,4 +1,5 @@
-\usepackage{microtype}  % Improve typography
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}   % Better typography
+
 \usepackage{lettrine}   % Add drop caps to chapter openings
 \usepackage{graphicx}
 \usepackage{ebgaramond}
@@ -8,9 +9,9 @@
 \newcommand{\hsp}{\kern 1pt}    % for nested quotation marks
 
 % Paragraph formatting
-\renewcommand{\baselinestretch}{1.125}
-\setlength{\parskip}{0pt}
-\setlength{\parindent}{1.25em}
+\renewcommand{\baselinestretch}{1.125}      % Allow lines to breathe by spreading the lines further
+\setlength{\parskip}{0pt}                   % Fixed space between paragraphs
+\setlength{\parindent}{1em}
 \widowpenalty=10000   % Reduce widows
 \clubpenalty=10000    % and orphans
 
